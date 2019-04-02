@@ -4,33 +4,33 @@ fetch(url).then(res => res.json()).then((out) => {
 console.log('->', out);
 
 
-const typeQuestion = 3;
+const typeQuestion = 2;
 
 //start here 
-// Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
-//     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
-// });
-// Handlebars.registerHelper("counter", function (index){
-//     return index + 1;
-// });
-// Handlebars.registerHelper("ck", function (key){
-//     return key + 1;
-// });
+Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+});
+Handlebars.registerHelper("counter", function (index){
+    return index + 1;
+});
+Handlebars.registerHelper("ck", function (key){
+    return key + 1;
+});
 
-// if(typeQuestion==1){
-// var theTemplateScript = document.getElementById("slide-template").innerHTML;
-// }
-// if(typeQuestion==2){
-// var theTemplateScript = document.getElementById("radio-template").innerHTML;
-// }
-// if(typeQuestion==3){
-// var theTemplateScript = document.getElementById("single-template").innerHTML;
-// }
+if(typeQuestion==1){
+var theTemplateScript = document.getElementById("slide-template").innerHTML;
+}
+if(typeQuestion==2){
+var theTemplateScript = document.getElementById("radio-template").innerHTML;
+}
+if(typeQuestion==3){
+var theTemplateScript = document.getElementById("single-template").innerHTML;
+}
 
 
-// var theTemplate = Handlebars.compile(theTemplateScript);
-// var theCompiledHtml = theTemplate(out);
-// document.getElementById('survey-component').innerHTML = theCompiledHtml;
+var theTemplate = Handlebars.compile(theTemplateScript);
+var theCompiledHtml = theTemplate(out);
+document.getElementById('survey-component').innerHTML = theCompiledHtml;
 //end here
 
 
@@ -93,7 +93,7 @@ if(typeQuestion==3){
 	htmlComponent += "</div>";
 }
 
-document.getElementById('survey-component').innerHTML = htmlComponent;
+//document.getElementById('survey-component').innerHTML = htmlComponent;
 
 // extras
 // if(typeQuestion==3){
