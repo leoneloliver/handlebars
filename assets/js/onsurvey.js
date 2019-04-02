@@ -4,7 +4,7 @@ fetch(url).then(res => res.json()).then((out) => {
 console.log('->', out);
 
 
-const typeQuestion = 1;
+const typeQuestion = 3;
 
 //start here 
 // Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
