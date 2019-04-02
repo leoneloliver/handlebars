@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicons/favicon-onresearch.ico">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="assets/img/favicons/favicon-onresearch.ico">
+    <link rel="apple-touch-icon" href="assets/img/favicons/favicon-onresearch.ico" />
+
+    <!-- SEO -->
+    <title>Survey</title>
+    <meta name="author" content="OnR" />
+    <meta name="description" content="A user-friendly survey interface for every device." />
+
+    <!--Polyfills & Browser Fixes-->
+    <link rel="stylesheet" href="assets/css/ie10-viewport-bug-workaround.css" />
+    <script type="text/javascript" src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <!--Styles-->
+    <link rel="stylesheet" href="assets/css/bootstrap-4.3.1-min.css" />
+    <link rel="stylesheet" href="assets/css/main.css?v=2019" />
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap-slider-10.6.1-min.css" />
+
+    <!--Scripts-->
+    <script type="text/javascript" src="assets/js/jquery-3.3.1-min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-4.3.1-min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/bootstrap-slider-10.6.1-min.js"></script>
+
+
+    <script src="assets/js/handlebars-4.1.1-min.js"></script>
+    <script type="text/javascript" src="assets/js/onsurvey.js"></script>
+   
+</head>
+<body class="bg-custom">
+<article class="mb-5 mb-custom">
+    <section class="menu" once="menu" id="menu">
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm brand-primary text-white shadow">
+          <div class="container d-flex">
+            <div class="menu-logo">
+              <div class="navbar-brand col-5">  
+                <a class="navbar-caption text-white" href="#">
+                    <img src="assets/img/logo-onresearch-white.png" class="brand-logo">
+                </a> 
+              </div>
+            </div>
+             <div class="col-7 d-none d-lg-block d-md-block">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-white opac-md" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+          </div>
+        </nav>
+    </section>
+    <section>
+        <div class="container">
+            <div class="media-container-row mt-5">
+                <div class="mbr-text col-12 mbr-fonts-style">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                    <p class="text-secondary">Proin id eros arcu. Integer neque urna, malesuada vel iaculis ac, elementum ut mauris. Proin auctor sapien eu lacus congue, tincidunt luctus nisi egestas. </p>
+                    <p class="text-secondary d-none">
+                        Vestibulum eget massa nec tellus fermentum tincidunt. Praesent volutpat arcu quis dolor pretium suscipit. Morbi congue arcu non sapien auctor fringilla. Fusce tristique bibendum nunc, non viverra neque porttitor dapibus. Etiam tempor blandit nisi quis molestie. Quisque bibendum id mauris eu interdum. Sed dui erat, rhoncus eu elit vitae, molestie congue eros. Ut malesuada ultrices hendrerit. Curabitur luctus dolor eget ultrices bibendum. Donec lobortis auctor euismod.
+                    </p>
+                    <p class="text-secondary">
+                        Curabitur commodo, nulla et porttitor tincidunt, mi lorem sagittis metus, sit amet porta eros metus ut orci. Aenean vestibulum justo lorem, id suscipit turpis vestibulum at. Quisque non purus metus. Vivamus at nisl et enim dictum ornare eget bibendum est. Ut fermentum lacus eu odio porttitor gravida. Donec felis odio, interdum sit amet dolor in, blandit accumsan lectus. Aliquam feugiat purus id metus egestas pharetra. Vestibulum mauris quam, tincidunt tincidunt fermentum varius, tempus quis tellus. Phasellus rutrum, tellus sit amet malesuada sagittis, neque libero porta mi, mattis scelerisque arcu risus ut arcu. Integer bibendum eleifend consectetur. Mauris quis varius diam. Cras sit amet ornare tellus. Curabitur porttitor vestibulum nisl, sed tempor ligula venenatis at.
+                    </p>
+                    <div id="survey-component" class="d-block">
+                       <div class="text-center p-5">
+                            <div class="spinner-border text-secondary" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section>
+        <div class="container d-flex justify-content-center mt-5 mb-5">
+            <!-- <button type="button" class="btn btn-primary btn-md  btn-brand-muted mr-1 btn-rounded shadow-sm btn-controls" id="back_button">Preview</button> -->
+            <button type="button" class="btn btn-primary btn-md  btn-brand-secondary  ml-1  shadow-sm btn-controls" id="submit_button">Next</button>
+        </div>
+    </section>
+</article>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+        <div class="text-muted col text-left"><a href="#" class="link-info">Pravicy</a></div>
+        <div class="text-muted">
+            <div class="d-flex float-right pr-2">
+                <span class="d-none d-md-block small">Powered by</span><a href="#">&nbsp;<img src="assets/img/logo-onresearch-color.png">
+            </div>
+            
+        </div>
+    </div>
+  </div>
+</footer>
+</body>
+<html>
+
+<script id="slide-template" type="text/x-handlebars-template">
+<div class="onr-slide opacity-0">
+{{#each results}}
+     {{#ifEquals @index "3"}}
+        <div class="card">
+            <div class="card-body">
+            <input id="qSlider" name="{{location.city}}" data-slider-id="exSlider" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+            </div>
+        </div>
+    {{/ifEquals}}
+{{/each}}
+</div>
+</script>
+
+
+<script id="single-template" type="text/x-handlebars-template">
+<div class="onr-single-select">
+{{#each results}}
+  <div class="row ">
+      <div class="col-12">
+        <div class="card bg-white mt-2 {{showHide}}">
+              <div class="radio card-body p-3">
+                <label class="radio-container text-capitalize">{{location.state}}
+                  <input type="radio" name="Q" value="{{counter @index}}" id="Q{{counter @index}}_QAns{{ck @key}}">
+                  <span class="checkmark"></span>
+                </label>                                        
+             </div>
+          </div>
+    </div>
+  </div>  
+{{/each}}
+</div>
+</script>
+
+
+<script id="radio-template" type="text/x-handlebars-template">
+    <div class="table-responsive-split">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                {{#each results}}
+                  <th class="text-capitalize">{{location.city}}</th>
+                {{/each}}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                {{#each results}}
+                    <td data-th="{{location.city}}" class="text-capitalize"><label class="radio-container">
+                        <input type="radio" name="Q" value="{{counter @index}}" id="Q{{counter @index}}_QAns{{ck @key}}">
+                        <span class="checkmark"></span>
+                        </label>
+                    </td>
+                {{/each}}
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</script>
+
+
+
+
+
+<script type="text/javascript">
+// using handlebars the script should be into the template page
+
+</script>
