@@ -374,6 +374,14 @@ window.setTimeout(function(){
 // outside function
 function mainFunction(){
 
+	$(document).ready(function (){
+      $(".next,.prev").click(function (){
+          $('html, body').animate({
+              scrollTop: $("#survey-app").offset().top
+          }, 1000);
+      });
+  });
+
 	dinamicSteps();
 
 	function dinamicSteps(){
