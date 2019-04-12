@@ -5,7 +5,7 @@
   --bsColor: #F58233;
   --bsColorHover: #DF7706;
   --mutedColor: #555;
-  --mutedColorBorder: #ccc;
+  --mutedColorBorder: #dee2e6;
   --mutedColorHover: #fff;
   --mutedColorBorderHover: #b7b7b7;
   --bpItemColorLigth: #ade2e6;
@@ -17,7 +17,9 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #7d7d7d;
-  --spacialMargin: 5rem;*/
+  --tableBordered: #a8aeb1;
+  --spacialMargin: 5rem;
+*/
   
    
    /*wine*/
@@ -36,7 +38,8 @@
   --bgColor: #ececec;
   --textHeader: #212529;
   --textSecondary: #6c757d;
-  --textLabel: #000; 
+  --textLabel: #000;
+  --tableBordered: #a8aeb1; 
   --spacialMargin: 5rem;*/
   
   
@@ -57,6 +60,7 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;*/
 
 
@@ -77,6 +81,7 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000; 
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;
 */
 
@@ -97,10 +102,11 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;*/
 
   /*red*/
-  --bpColor: #ff0000;
+  /*--bpColor: #ff0000;
   --bsColor: #8a0404;
   --bsColorHover: #ff0000;
   --mutedColor: #1b1b1b;
@@ -116,7 +122,8 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
-  --spacialMargin: 5rem;
+  --tableBordered: #a8aeb1;
+  --spacialMargin: 5rem;*/
 
 
   /*blue*/
@@ -136,11 +143,12 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;*/
 
 
   /*bootstrap*/
-	/*--bpColor: #563d7c;
+	--bpColor: #563d7c;
   --bsColor: #322348;
   --bsColorHover: #cbbde2;
   --mutedColor: #1b1b1b;
@@ -156,7 +164,8 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
-  --spacialMargin: 5rem;*/
+  --tableBordered: #a8aeb1;
+  --spacialMargin: 5rem;
 
 
   /*hello kit*/
@@ -176,6 +185,7 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;*/
 
   /*colegial*/
@@ -195,6 +205,7 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;
 */
   /*colegial 2*/
@@ -214,6 +225,7 @@
   --textHeader: #ec654f;
   --textSecondary: #0c416d;
   --textLabel: #0c416d;
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;*/
 
   /*kiwi*/
@@ -233,6 +245,7 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;*/
 
 
@@ -253,6 +266,7 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;*/
 
 
@@ -273,9 +287,30 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000;
+  --tableBordered: #a8aeb1;
   --spacialMargin: 5rem;
 */
-  
+
+
+  /*dark*/
+  /*--bpColor: #131313;
+  --bsColor: #a0a0a0;
+  --bsColorHover: #868686;
+  --mutedColor: #fff;
+  --mutedColorBorder: #a8aeb1;
+  --mutedColorHover: #fff;
+  --mutedColorBorderHover: #d0d0d0;
+  --bpItemColorLigth: #a8aeb1;
+  --bpItemColorLigthHover: #eaeaea;
+  --bpColorLight: #b9b9b9;
+  --customWhite: #fff;
+  --borderModal: #a8aeb1;
+  --bgColor: #1b1b1bdb;
+  --textHeader: #d4d4d4;
+  --textSecondary: #bdbdbd;
+  --textLabel: #000;
+  --tableBordered: transparent;
+  --spacialMargin: 5rem;*/
 
 
 }
@@ -403,6 +438,9 @@ label, .custom-tick{
 }
 .title-row{
   width: 30% !important;
+}
+.table-bordered {
+    border: 1px solid var(--tableBordered);
 }
 
 /*tables responsive split*/
