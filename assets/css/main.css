@@ -21,7 +21,7 @@
   
    
    /*wine*/
-  --bpColor: #903e5a;
+  /*--bpColor: #903e5a;
   --bsColor: #3d482f;
   --bsColorHover: #cb738d;
   --mutedColor: #555;
@@ -37,7 +37,7 @@
   --textHeader: #212529;
   --textSecondary: #6c757d;
   --textLabel: #000; 
-  --spacialMargin: 5rem;
+  --spacialMargin: 5rem;*/
   
   
   /*skooli*/
@@ -100,7 +100,7 @@
   --spacialMargin: 5rem;*/
 
   /*red*/
-  /*--bpColor: #ff0000;
+  --bpColor: #ff0000;
   --bsColor: #8a0404;
   --bsColorHover: #ff0000;
   --mutedColor: #1b1b1b;
@@ -117,7 +117,7 @@
   --textSecondary: #6c757d;
   --textLabel: #000;
   --spacialMargin: 5rem;
-*/
+
 
   /*blue*/
   /* --bpColor: #0071c5;
