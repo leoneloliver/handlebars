@@ -859,6 +859,7 @@ label.spacing-left{
 button.btn.dropdown-toggle.btn-light {
     background: var(--bpColor);
     color: var(--customWhite);
+    border: transparent;
 }
 .bootstrap-select .dropdown-menu li a {
     padding: 0.5rem 1rem;
@@ -933,6 +934,11 @@ button.btn.dropdown-toggle.btn-light {
 }  
 */
 
+
+/*polyfills*/
+.form-control{
+  background: transparent;
+}
 
 .hide{
   display: none;
