@@ -394,6 +394,9 @@ if(customTicks){
 	var tick = ['<i>|</i>0', '<i>|</i>10', '<i>|</i>20', '<i>|</i>30', '<i>|</i>40', '<i>|</i>50', '<i>|</i>60', '<i>|</i>70', '<i>|</i>80', '<i>|</i>90', '<i>|</i>100']
 }
 
+var displayTooltip = 'show';
+if (window.innerWidth <= 575) {displayTooltip = 'always';}
+
 window.setTimeout(function(){
   $('#qSlider,#qSlider2,#qSlider3').slider({
     enabled: true,
@@ -422,7 +425,8 @@ window.setTimeout(function(){
 
     // ticks_labels: ['<i>|</i>1', '<i>|</i>2', '<i>|</i>3'],
     ticks_snap_bounds: 0,
-    tooltip: 'block',
+    // tooltip: 'block',
+    tooltip: displayTooltip,
     tooltip_position: 'top',
     tooltip_split: false,
       formatter: function(value) {
