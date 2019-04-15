@@ -1,7 +1,7 @@
 :root{
 
   /*onr*/
-  /*--bpColor: #5BC5CD;
+ /* --bpColor: #5BC5CD;
   --bsColor: #F58233;
   --bsColorHover: #DF7706;
   --mutedColor: #555;
@@ -106,7 +106,7 @@
   --spacialMargin: 5rem;*/
 
   /*red*/
-  /*--bpColor: #ff0000;
+  --bpColor: #ff0000;
   --bsColor: #8a0404;
   --bsColorHover: #ff0000;
   --mutedColor: #1b1b1b;
@@ -123,7 +123,7 @@
   --textSecondary: #6c757d;
   --textLabel: #000;
   --tableBordered: #a8aeb1;
-  --spacialMargin: 5rem;*/
+  --spacialMargin: 5rem;
 
 
   /*blue*/
@@ -148,7 +148,7 @@
 
 
   /*bootstrap*/
-	--bpColor: #563d7c;
+	/*--bpColor: #563d7c;
   --bsColor: #322348;
   --bsColorHover: #cbbde2;
   --mutedColor: #1b1b1b;
@@ -165,7 +165,7 @@
   --textSecondary: #6c757d;
   --textLabel: #000;
   --tableBordered: #a8aeb1;
-  --spacialMargin: 5rem;
+  --spacialMargin: 5rem;*/
 
 
   /*hello kit*/
@@ -325,7 +325,9 @@ html {
   position: relative;
   min-height: 100%;
 }
-
+body{
+  overflow-x: hidden;
+}
 h1, h2, h3, h4, h5{
   color: var(--textHeader);
 }
@@ -421,9 +423,17 @@ label, .custom-tick{
   font-weight: 400;
   vertical-align: middle;
 }
-.table .radio-container {
+.table .radio-container, .table .checkbox-container {
     display: initial;
 }
+.table .checkbox-container {
+    padding-left: 25px;
+}
+.table .other input[type="text"]{
+  background: transparent;
+  color: var(--textLabel);
+}
+
 .table thead td, .table thead th {
     vertical-align: middle !important;
 }
@@ -477,8 +487,8 @@ label, .custom-tick{
   }
   .table-responsive-split .checkmark {
     position: absolute;
-    top: 15px;
-    left: 10px;
+    top: 15px !important;
+    left: 10px !important;
   }
   /*.table-responsive-split .table tr td[data-th]:after {
     content: attr(data-th);
@@ -551,6 +561,18 @@ label, .custom-tick{
   .table tbody th{
     font-weight: 600;
   }
+
+  .table .other input[type="text"] {
+    color: var(--customWhite);
+    font-weight: 600;
+  }
+
+
+  .table-bordered, .table-bordered tr{
+    border: none;
+  }
+
+ 
   
 }
 
