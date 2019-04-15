@@ -451,18 +451,29 @@ function mainFunction(){
       });
   });
 
-	dinamicSteps();
+	dynamicSteps();
 
-	function dinamicSteps(){
+	function progressBar(current){
+		console.log(current);
+		var totalItem = ($('.s-item').length)-1;
+		var porcentage = Math.ceil((current/totalItem)*100);
+		document.getElementById("progress-bar").style.width = porcentage+"%";
+	}
+
+	function dynamicSteps(){
 		// actions
 		var currentItem = 0;
 		var totalItem = ($('.s-item').length)-1;
+
+		progressBar(currentItem);
+
 		$('.s-item').addClass('hide');
 		$('.s-item').eq(currentItem).addClass('active');
 		checkItems();
 
 		$('.next').on('click', function(){
 			currentItem ++;
+			progressBar(currentItem);
 			
 			$('.s-item').removeClass('bounceInLeft').addClass('bounceInRight');
 			
@@ -472,6 +483,7 @@ function mainFunction(){
 		});
 		$('.prev').on('click', function(){
 			currentItem --;
+			progressBar(currentItem);
 			
 			$('.s-item').removeClass('bounceInRight').addClass('bounceInLeft');
 			
