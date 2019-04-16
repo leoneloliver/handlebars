@@ -603,11 +603,17 @@ label, .custom-tick{
     background:var(--bsColor);
     padding: 10px;
     border-radius: 50px;
-    margin-right: 28px !important;
+    margin-right: 15px !important;
   }
 }
 
-@media (max-width: 341px) {
+@media (max-width: 380px) {
+
+  .steps {
+    margin-right: 35px !important;
+  }
+}
+@media (max-width: 340px) {
 
   .steps {
     margin-right: 45px !important;
