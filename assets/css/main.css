@@ -595,6 +595,24 @@ label, .custom-tick{
   
 }
 
+@media (max-width: 575px) {
+
+  .steps {
+    float: right !important;
+    font-size: 0.9rem;
+    background:var(--bsColor);
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 28px !important;
+  }
+}
+
+@media (max-width: 341px) {
+
+  .steps {
+    margin-right: 45px !important;
+  }
+}
 
 
 
@@ -1028,4 +1046,9 @@ button.btn.dropdown-toggle.btn-light {
 .s-item.active{
   display: block;
   transition: all .4s;
+}
+.steps {
+  float: left;
+  font-size: 0.7rem;
+  margin-right: 15px;
 }

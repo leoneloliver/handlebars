@@ -450,6 +450,7 @@ function mainFunction(){
 		var totalItem = ($('.s-item').length)-1;
 		var porcentage = Math.ceil((current/totalItem)*100);
 		document.getElementById("progress-bar").style.width = porcentage+"%";
+		$(".steps").html((current+1)+"/"+(totalItem+1));
 	}
 
 	function dynamicSteps(){
